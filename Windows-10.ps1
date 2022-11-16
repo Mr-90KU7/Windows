@@ -20,11 +20,40 @@ Write-Host "
 {08}=> Education N
 {09}=> Enterprise
 {10}=> Enterprise N
-" -ForegroundColor Blue
+" -ForegroundColor Green
 
 [Int]$Os_type = Read-Host -Promp "Select your Windows edition"
 
-if($Os_type -eq 1){
-
+if($Os_type -eq 01){
 Activating(Decode($licence_key[0]))
+}
+elseif($Os_type -eq 02){
+Activating(Decode($licence_key[1])
+}
+elseif($Os_type -eq 03){
+Activating(Decode($licence_key[2])
+}
+elseif($Os_type -eq 04){
+Activating(Decode($licence_key[3])
+}
+elseif(Os_type -eq 05){
+Activating(Decode($licence_key[04])
+}
+elseif(Os_type -eq 06){
+Activating(Decode($licence_key[05])
+}
+elseif(Os_type -eq 07){
+Activating(Decode($licence_key[06])
+}
+elseif(Os_type -eq 08){
+Activating(Decode($licence_key[07])
+}
+elseif(Os_type -eq 09){
+Activating(Decode($licence_key[08])
+}
+elseif(Os_type -eq 10){
+Activatng(Decode($licence_key[09])
+}
+else{
+write-host "Your Input Wrong Please Enter Valid Number" -ForegroundColor Red
 }
